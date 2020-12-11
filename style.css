@@ -3,7 +3,7 @@ html, body {
   padding: 0;
   height: 100%;
   width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Bungee";
   overflow: hidden;
 }
 
@@ -67,12 +67,14 @@ html, body {
   }
 }
 .resetButton {
-  margin-top: 35px;
+  margin-top: 25px;
   background: #9B9FB5;
   color: #313131;
   padding: 10px;
   border-radius: 10px;
   transition: 0.5s;
+  font: 24px "Bungee";
+  padding: 5px 35px;
 }
 .resetButton:hover {
   cursor: pointer;
