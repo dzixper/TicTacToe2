@@ -1,0 +1,82 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #8C7284;
+  flex-direction: column;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3px;
+  background: #332630;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.tile {
+  border: 1px solid #9B9FB5;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #B1B7D1;
+  width: 180px;
+  height: 180px;
+  transition: 0.5s;
+  animation: halfFadeIn 1s;
+}
+.tile:hover {
+  background: #9B9FB5;
+  border-color: #8C7284;
+}
+
+.tileText {
+  color: #42343f;
+  text-transform: uppercase;
+  font-size: 100px;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes halfFadeIn {
+  0% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.resetButton {
+  margin-top: 35px;
+  background: #9B9FB5;
+  color: #313131;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.resetButton:hover {
+  cursor: pointer;
+  color: #626262;
+  background: #B1B7D1;
+}
+
+/*# sourceMappingURL=style.css.map */
